@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Jardin de Rosette & Rosario</title>
+    <style>
+        :root { --accent: #d4af37; --primary: #bb86fc; --bg: #0a0a0a; --card: #161616; }
+        body { font-family: 'Georgia', serif; background: var(--bg); color: #e0e0e0; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .container { background: var(--card); padding: 30px; border-radius: 25px; box-shadow: 0 15px-50px rgba(0,0,0,0.9); width: 100%; max-width: 550px; border: 1px solid #222; }
+        h1 { color: var(--accent); text-align: center; font-size: 1.8rem; letter-spacing: 2px; }
+        p.intro { text-align: center; font-style: italic; color: #888; margin-bottom: 40px; border-bottom: 1px solid #333; padding-bottom: 20px; }
+        h3 { color: var(--primary); margin-top: 40px; font-size: 1.2rem; text-transform: uppercase; border-left: 3px solid var(--accent); padding-left: 15px; }
+        .q-group { margin-bottom: 30px; background: #1c1c1c; padding: 15px; border-radius: 12px; }
+        label { display: block; margin-bottom: 12px; font-weight: bold; color: #ccc; }
+        select, textarea, input[type="text"] { width: 100%; background: #262626; border: 1px solid #3d3d3d; color: white; border-radius: 8px; padding: 12px; box-sizing: border-box; font-size: 1rem; margin-bottom: 10px; }
+        .btn-send { background: linear-gradient(45deg, #d4af37, #f2d06b); color: #000; border: none; padding: 20px; border-radius: 50px; width: 100%; font-weight: bold; font-size: 1.2rem; cursor: pointer; margin-top: 40px; transition: 0.3s; }
+        .btn-send:hover { transform: scale(1.02); box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🌹 Pour ma précieuse Rosette</h1>
+    <p class="intro">"L'intimité est le sanctuaire de notre amour. Confie-moi tes désirs les plus profonds."</p>
+
+    <form id="fullForm">
+        <h3>✨ Notre Connexion Émotionnelle</h3>
+        <div class="q-group">
+            <label>Ton humeur actuelle avec moi ?</label>
+            <select name="Humeur">
+                <option>Passionnée & Intense</option>
+                <option>Douce & Romantique</option>
+                <option>Coquine & Joueuse</option>
+                <option>Besoin d'un long câlin</option>
+            </select>
+            <input type="text" name="Humeur_Autre" placeholder="Ou décris ton ressenti ici...">
+        </div>
+
+        <div class="q-group">
+            <label>Quel est ton meilleur souvenir avec moi ces 3 derniers mois ?</label>
+            <textarea name="Souvenir" rows="2"></textarea>
+        </div>
+
+        <div class="q-group">
+            <label>Une habitude chez moi que tu trouves étrangement mignonne ?</label>
+            <input type="text" name="Habitude_Mignonne">
+        </div>
+
+        <h3>🔥 Sensualité & Langage du Corps</h3>
+        <div class="q-group">
+            <label>Quelle partie de mon corps préfères-tu embrasser ?</label>
+            <input type="text" name="Zone_Preferee_Rosario">
+        </div>
+
+        <div class="q-group">
+            <label>Quelle zone de TON corps aimerais-tu que je masse ce soir ?</label>
+            <input type="text" name="Zone_Massage_Rosette">
+            <input type="text" name="Autre_Zone" placeholder="Une autre envie corporelle ?">
+        </div>
+
+        <div class="q-group">
+            <label>Quelle musique ou ambiance pour notre prochain moment ?</label>
+            <input type="text" name="Musique_Ambiance">
+        </div>
+
+        <h3>🔞 Nos Désirs les plus Secrets</h3>
+        <div class="q-group">
+            <label>Ce soir, tu es plutôt d'humeur...</label>
+            <select name="Style_Intimite">
+                <option>Douce et lente</option>
+                <option>Sauvage et sans limites</option>
+                <option>Exploratrice (nouveautés)</option>
+                <option>Dominante / Soumise</option>
+            </select>
+            <input type="text" name="Style_Autre" placeholder="Précise ton envie ici...">
+        </div>
+
+        <div class="q-group">
+            <label>Un endroit audacieux où tu aimerais qu'on se retrouve seuls ?</label>
+            <input type="text" name="Lieu_Audacieux">
+        </div>
+
+        <div class="q-group">
+            <label>Une expérience ou un fantasme que tu veux explorer avec moi ?</label>
+            <textarea name="Fantasme" rows="3" placeholder="Dis-moi tout, je suis ton confident..."></textarea>
+        </div>
+
+        <div class="q-group">
+            <label>Une chose que j'ai faite récemment et qui t'a excitée ?</label>
+            <textarea name="Declic_Excitant" rows="2"></textarea>
+        </div>
+
+        <h3>🎲 Jeux & Promesses</h3>
+        <div class="q-group">
+            <label>Si je te donnais un "Bon pour un service", que choisirais-tu ?</label>
+            <select name="Service_Cadeau">
+                <option>Petit-déjeuner au lit</option>
+                <option>Obéissance totale (1h)</option>
+                <option>Massage intégral à l'huile</option>
+                <option>Soirée shopping / Sortie</option>
+            </select>
+            <input type="text" name="Service_Autre" placeholder="Invente ton propre cadeau...">
+        </div>
+
+        <div class="q-group">
+            <label>À quel point as-tu hâte qu'on se voie ? (1 à 10)</label>
+            <input type="range" name="Impatiente" min="1" max="10" value="10">
+        </div>
+
+        <div class="q-group">
+            <label>Un petit mot doux ou un secret pour finir ?</label>
+            <textarea name="Mot_Doux" rows="2"></textarea>
+        </div>
+
+        <button type="button" class="btn-send" onclick="envoyerWhatsApp()">Envoyer mes secrets à mon Rosario 🕊️</button>
+    </form>
+
+    <div style="text-align:center; font-size:0.8rem; color:#444; margin-top:20px;">
+        Codé avec amour par ton Technologue personnel.
+    </div>
+</div>
+
+<script>
+    function envoyerWhatsApp() {
+        const form = document.getElementById('fullForm');
+        const formData = new FormData(form);
+        let message = "🌹 *LES CONFIDENCES DE ROSETTE* 🌹%0A%0A";
+
+        formData.forEach((value, key) => {
+            if (value.trim() !== "" && value !== "10") {
+                message += `*${key.replace(/_/g, ' ')}* : _${value}_%0A`;
+            } else if (key === "Impatiente") {
+                message += `*Impatiente* : ${value}/10%0A`;
+            }
+        });
+
+        const numero = "22996913645";
+        const finalUrl = `https://wa.me/${numero}?text=${encodeURIComponent(message.replace(/\n/g, '\n'))}`;
+        
+        window.open(finalUrl, '_blank');
+    }
+</script>
+
+</body>
+</html>
